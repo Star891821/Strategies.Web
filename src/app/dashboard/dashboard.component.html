@@ -1,0 +1,61 @@
+    <!-- ########## START: MAIN PANEL ########## -->
+    <div class="br-mainpanel">
+        <div class="br-pagetitle">
+          <i class="icon ion-ios-home-outline"></i>
+          <div>
+            <h4>Dashboard</h4>
+            <!-- <p class="mg-b-0">Do bigger things with Bracket plus, the responsive bootstrap 4 admin template.</p> -->
+          </div>
+        </div>
+  
+        <div class="br-pagebody">
+
+            <div class="row row-sm">
+            <table class="table table-bordered table-colored table-primary">
+                <thead>
+                  <tr>
+                    <!-- <th class="text-center">User</th> -->
+                    <th>Strategy ID</th>
+                    <th>Primary Client</th>
+                    <th>Secondary Client</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of users; index as i">
+                        <!-- <td class="text-center">                           
+                        </td> -->
+                        <td>
+                          <div>{{ user.StrategyID }}</div>                 
+                        </td>
+                        <td>
+                          <div>{{ user.PrimaryClient }}</div>                 
+                        </td>
+                        <td>
+                          <div>{{ user.SecondaryClient }}</div>                 
+                        </td>
+                        <td>
+                          <div>{{ user.Date }}</div>                 
+                        </td>
+                        <td>
+                          <div>{{ user.Status }}</div>                 
+                        </td>
+                        <td>
+                          <div>
+                            <button class="btn btn-small btn-success" *ngIf="user.Action=='Generate Strategy'">{{ user.Action }}</button>
+                            <button class="btn btn-small btn-primary" *ngIf="user.Action!='Generate Strategy'">{{ user.Action }}</button>
+                          </div>                 
+                        </td>
+                      </tr>
+                </tbody>
+              </table>
+            </div>
+  
+            
+  
+        </div><!-- br-pagebody -->
+       
+      </div><!-- br-mainpanel -->
+      <!-- ########## END: MAIN PANEL ########## -->

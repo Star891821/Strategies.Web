@@ -1,0 +1,40 @@
+.dot {
+    height: 22px;
+    width: 22px;
+    background-color: #ff9f5b;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    font-size: 15px;
+  }
+
+.scrollbar
+{	 
+	float: left;	 
+	width: 65px;
+	background: #F5F5F5;
+	overflow-y: scroll;	 
+}
+
+
+  /*
+ *  STYLE 3
+ */
+
+#style-3::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
